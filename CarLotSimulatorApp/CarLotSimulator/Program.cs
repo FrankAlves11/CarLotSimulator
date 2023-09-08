@@ -22,6 +22,10 @@ namespace CarLotSimulator
                 HonkNoise = "Beep",
                 IsDriveable = true
             };
+            CarLotClass.IncerementCarValue();
+            
+
+
 
             Car car2 = new Car
             {
@@ -33,6 +37,7 @@ namespace CarLotSimulator
                 IsDriveable = true
 
             };
+            CarLotClass.IncerementCarValue();
 
             Car car3 = new Car
             {
@@ -44,6 +49,10 @@ namespace CarLotSimulator
                 IsDriveable = true
                 
             };
+            CarLotClass.IncerementCarValue();
+           
+            Console.WriteLine($"There are {CarLotClass.GetNumCars()} Cars.");
+
 
             car1.MakeEngineNoise();
             car1.MakeHonkNoise();
@@ -53,6 +62,8 @@ namespace CarLotSimulator
 
             car3.MakeEngineNoise();
             car3.MakeHonkNoise();
+
+
 
 
 
